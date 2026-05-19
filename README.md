@@ -2,34 +2,22 @@
 
 An end-to-end analytics project exploring revenue growth, customer behavior, and operational efficiency using SQL (DuckDB) and Python (Pandas/Seaborn).
 
-## Executive Summary
-
-This analysis reveals a rapidly scaling e-commerce platform with strong seasonal effects, clear product-category winners, and a measurable link between delivery performance and customer satisfaction.
-
 ## Key Business Insights
 
-### Revenue Growth & Seasonality
+### Growth & Seasonality
+* **Hyper-Scaling Trend:** The platform experienced rapid growth throughout 2017, with gross monthly revenue increasing from $111.8k (Jan 2017) to a peak of $987.8k (Nov 2017), representing an 8.8x increase within 11 months.
+* **November 2017 Volumetric Spike:** A peak of 7,289 orders generated $987.8k in revenue. This spike aligns strongly with Black Friday seasonal demand rather than steady linear growth.
+* **Operational Stabilization:** In 2018, revenue stabilized within a consistent range of $830k–$970k monthly, with approximately 6,000–7,000 completed orders per month.
 
-* The platform experienced **rapid hyper-growth in 2017**, scaling from **$111.8K (Jan)** to **$987.8K (Nov)** — an **8.8x increase within 11 months**.
-* A significant **November spike (~$987.8K, 7,289 orders)** aligns strongly with **Black Friday seasonal demand**, indicating heavy retail-driven seasonality rather than linear organic growth.
-* In 2018, revenue stabilized within a **$830K–$970K monthly range**, suggesting maturation into a steady-state operation.
+### Delivery Performance & Customer Satisfaction
+* **10-Day Satisfaction Benchmark:** 5-star ratings correlate with an average delivery time of 10.2 days, establishing ~10 days as the operational benchmark for high customer satisfaction.
+* **Impact of Delivery Delays:** As delivery time increases, satisfaction declines consistently. Beyond 13.8 days, ratings drop to 3 stars, and at approximately 20.8 days, they fall to 1 star.
+* **Operational Bottleneck:** Customer dissatisfaction is strongly associated with delayed delivery times, indicating logistics performance as a key driver of customer experience.
 
-### Delivery Performance vs Customer Satisfaction
-
-* Orders delivered in ~**10 days correlate with 5-star reviews**, establishing an operational benchmark for high satisfaction.
-* Once delivery exceeds **~14 days**, ratings decline to ~3 stars.
-* At **~21 days**, customer feedback deteriorates to **1-star reviews**, showing a strong negative nonlinear relationship between delay and satisfaction.
-* Conclusion: **Logistics speed is a primary driver of customer experience quality**, not random dissatisfaction.
-
-### Product Category Performance
-
-* **Health & Beauty** and **Watches & Gifts** are the strongest revenue drivers, contributing **$2.3M+ combined revenue** with strong satisfaction (>4.0★).
-* These categories show strong **product-market fit** and are ideal for expansion and marketing investment.
-* **Bed, Bath & Table** presents a structural risk:
-  * $1.02M revenue (3rd highest)
-  * Highest order volume (9,177 orders)
-  * Lowest satisfaction (3.92★)
-* This suggests potential issues in **product quality, supplier consistency, or fulfillment speed**.
+### Product Performance
+* **Revenue Leaders:** Health & Beauty and Watches & Gifts are the strongest revenue-generating categories, contributing over $2.3M in total sales with average ratings above 4.0. These categories demonstrate strong product-market fit and are suitable for further expansion.
+* **Volume vs Satisfaction Risk:** Bed, Bath & Table generates $1.02M in revenue (3rd highest) and the highest order volume (9,177 orders), but records the lowest satisfaction score (3.92), indicating potential churn risk.
+* **Strategic Focus Area:** Despite strong revenue contribution, Bed, Bath & Table requires further investigation into potential issues such as product quality or delivery performance, which may be driving lower customer satisfaction.
 
 ## Business Recommendations
 
