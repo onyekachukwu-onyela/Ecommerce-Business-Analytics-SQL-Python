@@ -2,13 +2,9 @@
 
 An end-to-end analytics project exploring revenue growth, customer behavior, and operational efficiency using SQL (DuckDB) and Python (Pandas/Seaborn).
 
----
-
 ## Executive Summary
 
 This analysis reveals a rapidly scaling e-commerce platform with strong seasonal effects, clear product-category winners, and a measurable link between delivery performance and customer satisfaction.
-
----
 
 ## Key Business Insights
 
@@ -18,16 +14,12 @@ This analysis reveals a rapidly scaling e-commerce platform with strong seasonal
 * A significant **November spike (~$987.8K, 7,289 orders)** aligns strongly with **Black Friday seasonal demand**, indicating heavy retail-driven seasonality rather than linear organic growth.
 * In 2018, revenue stabilized within a **$830K–$970K monthly range**, suggesting maturation into a steady-state operation.
 
----
-
 ### Delivery Performance vs Customer Satisfaction
 
 * Orders delivered in ~**10 days correlate with 5-star reviews**, establishing an operational benchmark for high satisfaction.
 * Once delivery exceeds **~14 days**, ratings decline to ~3 stars.
 * At **~21 days**, customer feedback deteriorates to **1-star reviews**, showing a strong negative nonlinear relationship between delay and satisfaction.
 * Conclusion: **Logistics speed is a primary driver of customer experience quality**, not random dissatisfaction.
-
----
 
 ### Product Category Performance
 
@@ -39,15 +31,11 @@ This analysis reveals a rapidly scaling e-commerce platform with strong seasonal
   * Lowest satisfaction (3.92★)
 * This suggests potential issues in **product quality, supplier consistency, or fulfillment speed**.
 
----
-
 ## Business Recommendations
 
 * Improve logistics efficiency to maintain delivery times within ~10 days to sustain high customer satisfaction.
 * Investigate quality and fulfillment issues in the Bed, Bath & Table category to reduce churn risk.
 * Scale marketing investment in Health & Beauty and Watches & Gifts due to strong profitability and satisfaction alignment.
-
----
 
 ## Tools & Techniques
 
